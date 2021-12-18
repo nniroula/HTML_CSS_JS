@@ -1,4 +1,19 @@
 h1{
     color:cyan;
     background-color: darkseagreen;
+    text-align: center;
+}
+#funny-work{
+    background-color: #b22222;
+    border: blue;
+    border-width: 10px;
+    padding: 10px;
+    border-style: dashed;
+    border-radius: 8px;
+    color: white;
+    display: inline;
+    font-family: monospace;
+    font:small-caption;
+    /* position:static; */
+   
 }
