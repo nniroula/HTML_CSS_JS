@@ -3,7 +3,7 @@ h1{
     background-color: darkseagreen;
     text-align: center;
 }
-#funny-work{
+#funny-work{ 
     background-color: #b22222;
     border: blue;
     border-width: 10px;
@@ -15,5 +15,17 @@ h1{
     font-family: monospace;
     font:small-caption;
     /* position:static; */
-   
 }
+
+.para:hover {
+    /* Gives a background color when you hover a cursor through the text */
+    background-color:coral;
+    transition: 200ms;
+} 
+
+   /* gives a strike through line to the text when you hover over, run this code in console and test how it behaves*/
+    /* Call this instead in js file inside a function so that it is easier to call all the times you need it for */
+    /* Add this class via javascriopt */
+.engineering{
+    text-decoration: line-through;   
+} 
