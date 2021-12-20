@@ -29,3 +29,8 @@ h1{
 .engineering{
     text-decoration: line-through;   
 } 
+
+.pictureClass{
+    height: 200px;
+    width: 250px;
+}
