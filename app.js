@@ -136,6 +136,7 @@ bttn.addEventListener('mouseover', function(){
 });
 */
 
+/*
 // callback functions(functions as return values)
 
 function add(x, y){
@@ -153,10 +154,53 @@ function multiply(x, y){
 function doMath(a, b, func){    // this function accepts another funciton as callback
     return func(a, b);
 }
-
+*/
 // anonymous function as callback
 
+const one = (x, y) => {
+    return x*y;
+}
+/* one(3, 4) -> you can run this code in browser console   */
 
+// two functions
+function getHypotenuse(a, b){
+    return Math.sqrt(a**2 + b**2);
+}
+function getArea(a, b){
+    return a*b/2;
+}
+
+side1 = 3;
+side2 = 4;
+side3 = getHypotenuse(side1, side2)
+
+// insteead use object oriented apprach, like self in python, this in JS
+const rightTriangle = {
+    a: 9,
+    b: 12,
+    area: function(){
+        return this.a * this.b/2;
+    },
+    printThis: function(){
+        console.log(this.a);   // this key word is an object reference
+    }
+}
+// to call area() function, rightTriangle.getArea()
+/* code above is not reuseable, make it reuseable with OOP concept*/
+
+// constructor functioni
+function Triangle(a, b){
+    this.a = a;
+    this.b = b;
+    this.getArea = function(){
+            return this.a * this.b/2;
+        }
+    this.getHypotenuse = function(){
+        return Math.sqrt(this.a ** 2 + this.b**2);
+    }
+}
+
+t1 = newTrianlgle(3, 4)
 
 
 
